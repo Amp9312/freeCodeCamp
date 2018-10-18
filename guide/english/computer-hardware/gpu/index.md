@@ -24,6 +24,8 @@ The first ever full-fledged processing unit for graphic acceleration was develop
 
 ## GPU vs CPU
 
+
+
 A CPU is optimized for minimum latency, i.e., "to be able to execute as many instructions as possible belonging to a single serial thread, in a given window of time". The processor must be able to switch quickly between operations. In order to get lots of latency on the CPU, there is a lot of infrastructure in the CPU like large caches for data to be readily available for execution, lots of Control Units for out-of-order executions, and a few ALU cores. The ISA of CPU is designed in a more generalized manner and can perform a wide-range of operations.
 While the CPU was designed for general purpose computations and instructions, GPU evolved for graphic computations. Same computation needs to be performed on hundreds and thousands of pixels for 2D/3D rendering of graphics. Thus, GPUs were primarily optimized for maximum throughput. This is implemented using tons of ALUs in a single architecture. The L2 cache is shrunk because till the data is fetched from DRAM, GPU cores have a lot of computations to perform, thereby overlapping the CPU stall time with massive parallelism. This is known as latency hiding.
 
